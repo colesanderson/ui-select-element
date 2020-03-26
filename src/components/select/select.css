@@ -1,0 +1,147 @@
+/* Selected Container */
+.select__selected {
+    position: relative;
+
+    display: flex;
+    height: 45px;
+    padding-right: 41px;
+    border: 2px solid #4C6EF0;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+
+.select__selected--is-open {
+    box-shadow: 0 0 10px 0 #4C6EF0;
+}
+
+.select__selected-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 12px;
+}
+
+.select__selected-chevron-down {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+}
+
+.select__selected-item-label {
+    overflow: hidden;
+    flex: 1 1 auto;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.select__selected-item-icon {
+    flex: 0 0 auto;
+    margin-right: 12px;
+
+    line-height: 0;
+}
+
+/* Select Options */
+.select__options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    padding: 8px;
+
+    border-radius: 4px;
+    background-color: #FFF;
+}
+
+/* Select Option */
+.select__option {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    padding: 0 8px;
+    border: 0;
+
+    border-radius: 4px;
+    background-color: #FFF;
+    outline: 0;
+
+    font-size: 16px;
+}
+
+.select__option:last-child {
+    margin-bottom: 0;
+}
+
+.select__option[data-disabled='true'] {
+    opacity: 0.4;
+}
+
+.select__option[data-disabled='true']:hover {
+    background-color: #FFF;
+    outline: 1px solid #000;
+
+    color: #000;
+}
+
+.select__option[data-disabled='true']:focus {
+    background-color: #FFF;
+    outline: 1px solid #000;
+
+    color: #000;
+}
+
+.select__option:active,
+.select__option:hover {
+    background-color: #EDEBEC;
+}
+
+.select__option:focus {
+    background-color: #4C6EF0;
+
+    color: #FFF;
+}
+
+.select__option-icon {
+    flex: 0 0 auto;
+    margin-right: 12px;
+
+    line-height: 0;
+}
+
+.select__option-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.select__option-label {
+    overflow: hidden;
+    flex: 1 1 auto;
+
+    white-space: nowrap;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+/* Visually hidden content but accessible for screen-reader */
+.select__visually-hidden {
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+
+    white-space: nowrap;
+}

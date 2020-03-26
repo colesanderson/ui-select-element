@@ -1,0 +1,19 @@
+.App {
+    padding: 12px;
+
+    color: #FFF;
+}
+
+.App__header {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+.App-label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 12px;
+}
